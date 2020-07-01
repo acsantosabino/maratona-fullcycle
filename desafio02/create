@@ -1,0 +1,2 @@
+docker run -v $PWD:/src gobuffalo/buffalo buffalo new app --vcs none --skip-pop -f
+sudo chmod a+wr app* -R
