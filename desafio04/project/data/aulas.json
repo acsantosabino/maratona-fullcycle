@@ -1,0 +1,56 @@
+[
+    {
+        "pk": "1",
+        "model": "maratona.Aulas",
+        "fields": {
+            "aula_nome": "Full Cycle e Estudo de caso",
+            "aula_url": "https://www.youtube.com/embed/MuWmfCDXFKU",
+            "pub_dia": "2020-06-29"
+        }
+    },
+    {
+        "pk": "2",
+        "model": "maratona.Aulas",
+        "fields": {
+            "aula_nome": "Microsserviço de assinaturas com RabbitMQ e Golang Buffalo",
+            "aula_url": "https://www.youtube.com/embed/2cHwTsI00uk",
+            "pub_dia": "2020-06-20"
+        }
+    },
+    {
+        "pk": "3",
+        "model": "maratona.Aulas",
+        "fields": {
+            "aula_nome": "Serverless framework e processamento de pagamentos",
+            "aula_url": "https://www.youtube.com/embed/gJZZ0E7wS58",
+            "pub_dia": "2020-07-01"
+        }
+    },
+    {
+        "pk": "4",
+        "model": "maratona.Aulas",
+        "fields": {
+            "aula_nome": "Multi-tenancy applications com Django",
+            "aula_url": "https://www.youtube.com/embed/8rLDB6QWSRQ",
+            "pub_dia": "2020-07-02"
+        }
+    },
+    {
+        "pk": "5",
+        "model": "maratona.Aulas",
+        "fields": {
+            "aula_nome": "Ecommerce com Nest.js, Loopback e ElasticSearch",
+            "aula_url": "https://www.youtube.com/embed/aB2Xv6ID6I4",
+            "pub_dia": "2020-07-03"
+        }
+    },
+    {
+        "pk": "6",
+        "model": "maratona.Aulas",
+        "fields": {
+            "aula_nome": "Microsserviços em produção com Docker e Kubernetes",
+            "aula_url": "",
+            "pub_dia": "2020-07-05"
+        }
+    }
+]

@@ -1,0 +1,19 @@
+FROM python:3
+MAINTAINER Arthur Santos <acsantosabino@gmail.com>
+
+ENV PYTHONUNBUFFERED 1
+RUN mkdir /usr/src/app
+ADD ./project /usr/src/app/
+WORKDIR /usr/src/app
+COPY ./requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir gunicorn==19.3.0
+
+RUN python manage.py migrate
+RUN python manage.py makemigrations maratona
+RUN python manage.py loaddata data/aulas.json
+
+# Expose ports
+EXPOSE 8000
+# default command to execute    
+CMD exec gunicorn mysite.wsgi:application --bind 0.0.0.0:8000 --workers 3

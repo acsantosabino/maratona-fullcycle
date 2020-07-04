@@ -1,0 +1,24 @@
+<head>
+    <h1>Maratona Fullcycle</h1>
+</head>
+<body>
+    {% if lista_aulas %}
+        <ul>
+        {% for aula in lista_aulas %}
+            <li>
+                <div>
+                    <h2>{{aula.aula_nome}}</h2>
+                    <p>{{aula.pub_dia}}</p>
+                    {% if aula.aula_url %}
+                        <iframe width="560" height="315" src="{{aula.aula_url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    {% else %}
+                        <p> Aula disponível em breve</p>
+                    {% endif %}
+                </div>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Nenhuma aula disponível.</p>
+    {% endif %}
+</body>
